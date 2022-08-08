@@ -17,35 +17,35 @@
     <!-- root element -->
     <div id="root">
         <section id="cover" class='active'>
-            <h1>Enjoy Coding!</h1>
+            <h1>Study Coding!</h1>
             <br>
             <br>
-            <h2>Let's Brush up JS Coding Skill</h2>
-            <h2>and</h2>
-            <h2>Learn the Usage of Webpack</h2>
+            <h2>個人的なプログラミング学習とGithubの機能習熟を目的として</h2>
+            <h2>JavaScriptを用いたアプリケーション開発など、</h2>
+            <h2>ハンズオン形式で学習した内容を投下しています</h2>
         </section>
 
         <!-- to_do list app -->
         <section id="todo" class='app'>
-            <h1>TODO LIST</h1>
+            <h1>TODO リスト</h1>
             <div>
                 <form class="td-search-form">
-                    <label class="td-label">SEARCH</label>
+                    <label class="td-label">検索</label>
                     <input type="text" class="td-search-input" placeholder='Search...'>
                 </form>
                 <form class="td-add-form">
-                    <label class="td-label">Add</label>
+                    <label class="td-label">追加</label>
                     <input type="text" class="td-add-input" placeholder='Add...'>
                 </form>
             </div>
             <div class="todo-container">
-                <h2>Remains to do</h2>
+                <h2>未対応</h2>
                 <ul class="todos">
                     <!-- to_do list -->
                 </ul>
             </div>
             <div class="done-container">
-                <h2>Already done</h2>
+                <h2>完了</h2>
                 <ul class="dones">
                     <!-- done-list -->
                 </ul>
@@ -55,9 +55,9 @@
         <!-- typing app -->
         <section id="typing" class='app'>
             <div id="ty-start-page" class='show'>
-                <h1>Typing Challenge</h1>
+                <h1>Typing チャレンジ</h1>
                 <div>
-                    Timelimit:
+                    時間制限:
                     <select class="ty-time-select" list='time-list'>
                         <optgroup id="time-list">
                             <option value="10">10 seconds</option>
@@ -68,15 +68,15 @@
                         </optgroup>
                     </select>
                 </div>
-                <h2>Are you ready?</h2>
-                <p>Select Timelimit & Press <span>Enter</span> to Start</p>
+                <h2>ランダムな英文をタイピングしてみましょう</h2>
+                <p>Press <span>Enter</span> to Start</p>
             </div>
             <div id="ty-game">
-                <h2><span id='ty-title-time'></span> Seconds TYPING CHALLENGE</h2>
+                <h2><span id='ty-title-time'></span> 秒 Typing チャレンジ</h2>
                 <div>
-                    <span>REMAINING TIME</span>
+                    <span>残り</span>
                     <span id='ty-timer'></span>
-                    <span>s</span>
+                    <span>秒</span>
                 </div>
                 <div id="ty-quote-container">
                     <div id="ty-quote"></div>
@@ -88,9 +88,9 @@
             </div>
             <div id="ty-result-container">
                 <div id="ty-result">
-                    <h3>Your typing speed is ...</h3>
-                    <h2 id='ty-LPM'></h2><span>[ letters per a minute ]</span>
-                    <div id="ty-back-to-start">Back to Start Page</div>
+                    <h3>あなたのタイピングスピードは ...</h3>
+                    <h2 id='ty-LPM'></h2><span>[ 文字／秒 ]</span>
+                    <div id="ty-back-to-start">最初のページに戻る</div>
                 </div>
                 <div id="ty-quote-review"></div>
             </div>
@@ -101,18 +101,18 @@
             <div class="sp-cover">
                 <h1>Slide Puzzle</h1>
                 <ul class="sp-menu">
-                    <p>select the level</p>
+                    <p>レベル選択</p>
                     <li data-level="easy">easy</li>
-                    <li data-level="medium">medium</li>
-                    <li data-level="difficult">difficult</li>
+                    <li data-level="medium">normal</li>
+                    <li data-level="difficult">hard</li>
                 </ul>
             </div>
             <div class="sp-container">
                 <img src="" alt="" id="sp-original-image">
                 <div class="sp-info-panel">
                     <img src="./images/slide_puzzle/picture.png" alt="" id="sp-show-original-btn">
-                    <div class="sp-moves">Moves: <span class="sp-counter"></span></div>
-                    <div class="sp-back-to-menu">Back to Menu</div>
+                    <div class="sp-moves">移動: <span class="sp-counter"></span></div>
+                    <div class="sp-back-to-menu">メニューに戻る</div>
                 </div>
                 <div class="sp-screen">
                 </div>
@@ -123,25 +123,31 @@
         <section id="memory-card" class='app'>
             <div class="mc-container">
                 <div class="mc-info-panel">
-                    <div>time passed: <span class='mc-time'>00:00</span></div>
-                    <div>matched: <span class='mc-matched'>0</span></div>
-                    <div>failed: <span class='mc-failed'>0</span></div>
-                    <span class="mc-reset-btn">reset</span>
+                    <div>経過時間（秒）: <span class='mc-time'>00:00</span></div>
+                    <div>ペア: <span class='mc-matched'>0</span></div>
+                    <div>ミス: <span class='mc-failed'>0</span></div>
+                    <span class="mc-reset-btn">リセット</span>
                 </div>
                 <div class="mc-deck"></div>
             </div>
             <div class="mc-congrats">
                 <h1>CONGRATULATION!!!</h1>
                 <h2>You made it in <span></span>seconds</h2>
-                <div class="mc-retry-btn">RETRY</div>
+                <div class="mc-retry-btn">リトライ</div>
             </div>
         </section>
 
         <!--  game-of-life app -->
         <section id='life' class='app'>
             <div id="gl-menu">
-                <h1>Conway's Game of Life</h1>
-                <div class="gl-size">Size :
+                <h1>ライフゲーム</h1>
+                <p>ライフゲームは生命の誕生、進化、淘汰などのプロセスを簡易的なモデルで再現したシミュレーションです。<br>
+                    <br>セルの生死ルール<br>
+                        誕生 : 死んでいるセルに隣接する生きたセルがちょうど3つあれば、次の世代が誕生する。<br>
+                        生存 : 生きているセルに隣接する生きたセルが2つか3つならば、次の世代でも生存する。<br>
+                        過疎 : 生きているセルに隣接する生きたセルが1つ以下ならば、過疎により死滅する。<br>
+                        過密 : 生きているセルに隣接する生きたセルが4つ以上ならば、過密により死滅する。</p>
+                <div class="gl-size">size :
                     <select class="gl-size-select" list='size-list' value='10'>
                         <optgroup id="size-list">
                             <option value="4">4</option>
@@ -152,7 +158,7 @@
                         </optgroup>
                     </select>
                 </div>
-                <div class="gl-speed">Speed :
+                <div class="gl-speed">speed :
                     <select class="gl-speed-select" list='speed-list' value='40'>
                         <optgroup id='speed-list'>
                             <option value="160">quite slow</option>
@@ -164,19 +170,19 @@
                     </select>
                 </div>
                 <div class="gl-menu-btns">
-                    <div class="gl-random-btn" data-value='2'>Random___50%</div>
-                    <div class="gl-random-btn" data-value='1.3'>Random___25%</div>
-                    <div class="gl-random-btn" data-value='1.1'>Random___10%</div>
+                    <div class="gl-random-btn" data-value='2'>ランダム配置（過密度50%）</div>
+                    <div class="gl-random-btn" data-value='1.3'>ランダム配置（過密度25%）</div>
+                    <div class="gl-random-btn" data-value='1.1'>ランダム配置（過密度10%）</div>
                     <div class="gl-self-select-btn">Select By Yourself</div>
                 </div>
             </div>
             <div class="gl-canvas-container">
-                <h2>GENERATION<span class='gl-generation'>1</span></h2>
-                <div class="gl-controller">Pause</div>
+                <h2>世代<span class='gl-generation'>1</span></h2>
+                <div class="gl-controller">一時停止</div>
                 <canvas id="canvas" height='400' width='600'></canvas>
                 <div class="gl-pattern">
                     <div>
-                        Pattern :
+                        パターン :
                         <select class="gl-pattern-select" list='pattern-list' value='cell'>
                             <optgroup id="pattern-list">
                                 <option value="cell">One Cell</option>
@@ -186,7 +192,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="gl-back-to-menu">Back to Menu</div>
+                <div class="gl-back-to-menu">メニューに戻る</div>
             </div>
         </section>
     </div>

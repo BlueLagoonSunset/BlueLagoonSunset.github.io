@@ -45,7 +45,7 @@ randomBtns.forEach(btn => {
         // controller.textContent = 'Generate';
         // controller.style.backgroundColor = RESUME_COLOR;
         runningState = true;
-        controller.textContent = 'Pause';
+        controller.textContent = '一時停止';
         controller.style.backgroundColor = PAUSE_COLOR;
         grid = createRandomGrid(btn.dataset.value);
         drawAliveCells(grid);
@@ -59,7 +59,7 @@ selfSelectBtn.addEventListener('click', () => {
     menu.classList.add('hide');
     canvasContainer.classList.add('active');
     pattern.classList.add('active');
-    controller.textContent = 'Generate';
+    controller.textContent = '生成';
     controller.style.backgroundColor = RESUME_COLOR;
 
     function createZeroGrid(){
@@ -116,11 +116,11 @@ backToMenu.addEventListener('click', () => {
 
 controller.addEventListener('click', () => {
     if(runningState){
-        controller.textContent = 'Resume';
+        controller.textContent = '再生';
         controller.style.backgroundColor = RESUME_COLOR;
         cancelAnimationFrame(animationId);
     }else{
-        controller.textContent = 'Pause';
+        controller.textContent = '一時停止';
         controller.style.backgroundColor = PAUSE_COLOR;
         animate();
     }
